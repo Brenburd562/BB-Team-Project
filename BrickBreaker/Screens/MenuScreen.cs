@@ -45,5 +45,17 @@ namespace BrickBreaker
             playButton.BackColor = Color.LightGray;
             exitButton.BackColor = Color.LightSalmon;
         }
+
+        private void highScoreButton_Click(object sender, EventArgs e)
+        {
+            // Goes to the high scores screen
+            HighScoreScreen hs = new HighScoreScreen();
+            Form form = this.FindForm();
+
+            form.Controls.Add(hs);
+            form.Controls.Remove(this);
+
+            hs.Location = new Point((form.Width - hs.Width) / 2, (form.Height - hs.Height) / 2);
+        }
     }
 }

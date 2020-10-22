@@ -39,17 +39,7 @@ namespace BrickBreaker
 
             if (ballRec.IntersectsWith(blockRec))
             {
-                //if (x <= b.x + 50 && x >= b.x)
-                //{
-                //    xSpeed = xSpeed * -1;
-                //}
-                //else if (y >= b.y - size && y <= b.y + 25)
-                //{
-
-                //    ySpeed = ySpeed * -1;
-                //}
-                xSpeed = xSpeed * -1;
-                ySpeed = ySpeed * -1;
+              
                 brickBounce.Play();
             }
 

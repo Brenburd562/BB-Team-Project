@@ -10,7 +10,7 @@ namespace BrickBreaker
     class Powerups
     {
 
-       
+
         public int size, x, y;
         public string type;
         public SolidBrush powerupBrush;
